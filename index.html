@@ -26,105 +26,111 @@
   </head>
   <body>
     <div class="container">
-      <div class="row mb-3">
-        <div class="col-5">
-          <div class="text-align-left">
-            <h1>City</h1>
-            <form id="search-location">
-              <div class="input-group mb-3">
-                <input
-                  type="search"
-                  id="city-input"
-                  class="form-control"
-                  placeholder="Search for location...."
-                  aria-describedby="button-addon2"
-                />
-                <button
-                  class="btn btn-primary btn-sm"
-                  type="submit"
-                  id="button-addon2"
-                >
-                  Submit
-                </button>
+      <div class="container-purple">
+        <div class="row mb-3">
+          <div class="col-5">
+            <div class="text-align-left">
+              <h1>City</h1>
+              <form id="search-location">
+                <div class="input-group mb-3">
+                  <input
+                    type="search"
+                    id="city-input"
+                    class="form-control"
+                    placeholder="Search for location...."
+                    aria-describedby="button-addon2"
+                  />
+                  <button
+                    class="btn btn-primary btn-sm"
+                    type="submit"
+                    id="button-addon2"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm"
+                id="current"
+              >
+                Use current location
+                <i class="fa-solid fa-location-dot"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-6">
+            <div class="row mt-3">
+              <div class="col-6">
+                <h4><span id="time"></span></h4>
+                <h6><span id="description"></span></h6>
+                <h1 class="display-1">🌤</h1>
               </div>
-            </form>
-            <button type="button" class="btn btn-secondary btn-sm" id="current">
-              Use current location
-              <i class="fa-solid fa-location-dot"></i>
-            </button>
-          </div>
-        </div>
-        <div class="col-1"></div>
-        <div class="col-6">
-          <div class="row mt-3">
-            <div class="col-6">
-              <h4><span id="time"></span></h4>
-              <h6><span id="description"></span></h6>
-              <h1 class="display-1">🌤</h1>
-            </div>
-            <div class="col-6">
-              <h4>
-                <span id="temperature"> </span>
-                °C | °F
-              </h4>
-              <h6>
-                <small>Humidity: <span id="humidity"> </span>%</small>
-                <br />
-                <small>Wind: <span id="wind"> </span>km/h</small>
-              </h6>
+              <div class="col-6">
+                <h4>
+                  <span id="temperature"> </span>
+                  °C | °F
+                </h4>
+                <h6>
+                  <small>Humidity: <span id="humidity"> </span>%</small>
+                  <br />
+                  <small>Wind: <span id="wind"> </span>km/h</small>
+                </h6>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row align-items-center">
-        <div class="col">
-          <div class="card text-center">
-            <div class="card-body">
-              <h6 class="card-title">Tomorrow</h6>
-              <h1>☀️</h1>
-              <h6 class="card-text">28°C</h6>
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="card text-center">
+              <div class="card-body">
+                <h6 class="card-title">Tomorrow</h6>
+                <h1>☀️</h1>
+                <h6 class="card-text">28°C</h6>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card text-center">
-            <div class="card-body">
-              <h6 class="card-title">Saturday</h6>
-              <h1>☀️</h1>
-              <h6 class="card-text">30°C</h6>
+          <div class="col">
+            <div class="card text-center">
+              <div class="card-body">
+                <h6 class="card-title">Saturday</h6>
+                <h1>☀️</h1>
+                <h6 class="card-text">30°C</h6>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card text-center">
-            <div class="card-body">
-              <h6 class="card-title">Sunday</h6>
-              <h1>🌩</h1>
-              <h6 class="card-text">31°C</h6>
+          <div class="col">
+            <div class="card text-center">
+              <div class="card-body">
+                <h6 class="card-title">Sunday</h6>
+                <h1>🌩</h1>
+                <h6 class="card-text">31°C</h6>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card text-center">
-            <div class="card-body">
-              <h6 class="card-title">Monday</h6>
-              <h1>🌦</h1>
-              <h6 class="card-text">26°C</h6>
+          <div class="col">
+            <div class="card text-center">
+              <div class="card-body">
+                <h6 class="card-title">Monday</h6>
+                <h1>🌦</h1>
+                <h6 class="card-text">26°C</h6>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card text-center">
-            <div class="card-body">
-              <h6 class="card-title">Tuesday</h6>
-              <h1>🌤</h1>
-              <h6 class="card-text">25°C</h6>
+          <div class="col">
+            <div class="card text-center">
+              <div class="card-body">
+                <h6 class="card-title">Tuesday</h6>
+                <h1>🌤</h1>
+                <h6 class="card-text">25°C</h6>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <a href="https://github.com/p0stro">Check my GitHub</a>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
