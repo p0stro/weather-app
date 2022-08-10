@@ -1,0 +1,33 @@
+h1 {
+  margin: 0 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+  font-family: "Karla", sans-serif;
+}
+h4 {
+  font-family: "Karla", sans-serif;
+}
+h6 {
+  color: darkmagenta;
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  width: 760px;
+  border: 1px solid purple;
+  margin: 20px auto;
+  padding: 40px;
+}
+
+.location-button {
+  margin: 40px 0 10px 0;
+}
+
+.temperature {
+  margin: 20px 0;
+}
+
+.now-info {
+  margin: 0 auto;
+}
