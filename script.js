@@ -42,7 +42,13 @@ function responseData(response) {
     response.data.main.humidity
   );
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].description;
+    response.data.weather[0].main;
+  document
+    .querySelector("#weather-icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
 
 function getWeatherByName(event) {
