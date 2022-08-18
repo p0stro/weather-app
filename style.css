@@ -38,5 +38,15 @@ h6 {
 }
 
 .icon {
-  text-align: start;
+  display: block;
+}
+
+.weather-temperature .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }

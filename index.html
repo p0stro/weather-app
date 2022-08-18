@@ -59,23 +59,25 @@
               </button>
             </div>
           </div>
-          <div class="col-1"></div>
           <div class="col-6">
             <div class="row mt-3">
               <div class="col-6">
                 <h4><span id="time"></span></h4>
                 <h6><span id="description"></span></h6>
-                <img
-                  src="http://openweathermap.org/img/wn/10d@2x.png"
-                  class="icon"
-                  id="weather-icon"
-                />
               </div>
-              <div class="col-6">
+              <div class="col-6 weather-temperature">
                 <h4>
                   <span id="temperature"> </span>
-                  <a href="#">°C</a> | <a href="#"> °F</a>
+                  <a href="#" id="celsius-link" class="active">°C</a> |
+                  <a href="#" id="fahrenheit-link"> °F</a>
                 </h4>
+                <div class="col-1">
+                  <img
+                    src="https://openweathermap.org/img/wn/10d@2x.png"
+                    class="icon"
+                    id="weather-icon"
+                  />
+                </div>
                 <h6>
                   <small>Humidity: <span id="humidity"> </span>%</small>
                   <br />
