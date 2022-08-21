@@ -8,12 +8,15 @@ function displayTime(now) {
     "Friday",
     "Saturday",
   ];
+  let day = days[now.getDay()];
+
   let hours = now.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
   } else {
     hours = `${hours}`;
   }
+
   let minutes = now.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
@@ -21,20 +24,17 @@ function displayTime(now) {
     minutes = `${minutes}`;
   }
 
-  let day = days[now.getDay()];
-
   return `${day}, ${hours}:${minutes}`;
 }
+
 let time = document.querySelector("#time");
 time.innerHTML = displayTime(new Date());
 
 function responseData(response) {
   let cityName = response.data.name;
-  let temperature = Math.round(response.data.main.temp);
-  let h1 = document.querySelector("h1");
-  h1.innerHTML = `${cityName}`;
-  let temperatureSpan = document.querySelector("#temperature");
-  temperatureSpan.innerHTML = `${temperature}`;
+  document.querySelector("h1").innerHTML = cityName;
+  let roundedCelsiusTemperature = Math.round(response.data.main.temp);
+  document.querySelector("#temperature").innerHTML = roundedCelsiusTemperature;
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
   celsiusTemperature = response.data.main.temp;
