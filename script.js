@@ -35,6 +35,8 @@ function responseData(response) {
   h1.innerHTML = `${cityName}`;
   let temperatureSpan = document.querySelector("#temperature");
   temperatureSpan.innerHTML = `${temperature}`;
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   celsiusTemperature = response.data.main.temp;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
