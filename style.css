@@ -8,6 +8,10 @@ h3 {
 h4 {
   font-family: "Karla", sans-serif;
 }
+h5 {
+  color: darkmagenta;
+  font-family: "Karla", sans-serif;
+}
 h6 {
   color: darkmagenta;
   font-family: "Karla", sans-serif;
@@ -44,4 +48,22 @@ h6 {
 .weather-temperature .active {
   color: black;
   cursor: default;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+.weather-forecast {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.forecast-icon {
+  margin-bottom: 8px;
 }
