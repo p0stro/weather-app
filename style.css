@@ -52,6 +52,7 @@ h6 {
 
 .weather-forecast-temperature-min {
   opacity: 0.6;
+  font-size: smaller;
 }
 
 .weather-temperature img {
