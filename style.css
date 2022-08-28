@@ -35,7 +35,7 @@ h6 {
 }
 
 .current-location {
-  color: #8b5ca1;
+  color: #8b5ca1 !important;
   background-color: #f4f0f6 !important;
   border-color: #8b5ca1;
 }
@@ -49,11 +49,6 @@ h6 {
 
 .icon {
   display: block;
-}
-
-.weather-temperature .active {
-  color: #000000;
-  cursor: default;
 }
 
 .weather-forecast-temperature-min {
