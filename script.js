@@ -86,7 +86,9 @@ function responseData(response) {
   let cityName = response.data.name;
   document.querySelector("h1").innerHTML = cityName;
   let roundedCelsiusTemperature = Math.round(response.data.main.temp);
-  document.querySelector("#temperature").innerHTML = roundedCelsiusTemperature;
+  document.querySelector(
+    "#temperature"
+  ).innerHTML = `${roundedCelsiusTemperature} °C`;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
