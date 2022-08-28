@@ -9,11 +9,11 @@ h4 {
   font-family: "Karla", sans-serif;
 }
 h5 {
-  color: darkmagenta;
+  color: #8b5ca3;
   font-family: "Karla", sans-serif;
 }
 h6 {
-  color: darkmagenta;
+  color: #8b5ca3;
   font-family: "Karla", sans-serif;
 }
 .container {
@@ -23,16 +23,22 @@ h6 {
 }
 .container-purple {
   width: 760px;
-  border: 1px solid purple;
+  border: 1px solid #8b5ca3;
   margin: 20px auto;
   padding: 40px;
   border-radius: 10px;
 }
 
-.location-button {
-  margin: 40px 0 10px 0;
+.search-button {
+  background-color: #8b5ca1 !important;
+  border: 0px;
 }
 
+.current-location {
+  color: #8b5ca1;
+  background-color: #f4f0f6 !important;
+  border-color: #8b5ca1;
+}
 .temperature {
   margin: 20px 0;
 }
@@ -46,12 +52,12 @@ h6 {
 }
 
 .weather-temperature .active {
-  color: black;
+  color: #000000;
   cursor: default;
 }
 
 .weather-forecast-temperature-min {
-  opacity: 0.6;
+  opacity: 0.8;
   font-size: smaller;
 }
 
